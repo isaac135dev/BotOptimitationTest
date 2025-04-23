@@ -15,8 +15,6 @@
 - Kotlin (o Java) – Desarrollo nativo Android
 - Android Accessibility Services API
 - TextToSpeech y/o TalkBack compatibility
-- LiveData + ViewModel (arquitectura recomendada)
-- Firebase Crashlytics (para seguimiento de errores)
 
 ## ⚙️ Permisos y configuraciones necesarias
 
