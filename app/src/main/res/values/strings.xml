@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BotDroid</string>
+    <string name="accessibility_service_desc">ServiceBot</string>
+</resources>
