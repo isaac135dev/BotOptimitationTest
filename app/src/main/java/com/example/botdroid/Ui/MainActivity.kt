@@ -62,7 +62,6 @@ class MainActivity : ComponentActivity() {
         val sharedPref = getSharedPreferences("mi_app", MODE_PRIVATE)
 
         setContent {
-
             val context = LocalContext.current
             var showDialog by remember { mutableStateOf(false) }
             viewModel.ScheduleAppLaunch(context)
@@ -73,19 +72,6 @@ class MainActivity : ComponentActivity() {
                     showDialog = true
                 }
             }
-
-            if (showDialog) {
-                AlertDialogAccesibilidad(
-                    onConfirm = {
-                        abrirAccesibilidadSettings(context)
-                        showDialog = false
-                    },
-                    onDismiss = {
-                        showDialog = false
-                    }
-                )
-            }
-
             BotDroidTheme {
                 AppContent(sharedPref)
             }
