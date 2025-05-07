@@ -9,7 +9,7 @@ app.use(cors());
 const serviceAccount = require(path.join(__dirname, "./serviceAccountKey.json"));
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
+  credential: admin.credential.cert(process.env.SERVICE_ACCOUNT_KEY ?? serviceAccount)
 });
 
 const db = admin.firestore();
